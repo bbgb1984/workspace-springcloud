@@ -1,0 +1,17 @@
+package com.qbao.service_A;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.adapter.rxjava.Result;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
+import rx.Observable;
+
+public interface GitHubService {
+  @GET("http://localhost:5555/api-a/add")
+  Call<List<Object>> listRepos(@Query("a") String a,@Query("b") String b,@Query("accessToken") String accessToken);
+  @GET("users/{user}/repos")
+  Observable<Result<List<Object>>> listRepos2(@Path("user") String user);
+}

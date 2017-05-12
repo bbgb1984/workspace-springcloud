@@ -1,0 +1,21 @@
+package com.didispace.filter;
+
+import java.util.Map;
+
+import org.springframework.cloud.netflix.zuul.ZuulFilterInitializer;
+
+import com.netflix.zuul.FilterLoader;
+import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.filters.FilterRegistry;
+import com.netflix.zuul.monitoring.CounterFactory;
+import com.netflix.zuul.monitoring.TracerFactory;
+
+public class PostFilter extends ZuulFilterInitializer {
+
+	public PostFilter(Map<String, ZuulFilter> filters, CounterFactory counterFactory, TracerFactory tracerFactory,
+			FilterLoader filterLoader, FilterRegistry filterRegistry) {
+		super(filters, counterFactory, tracerFactory, filterLoader, filterRegistry);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.qbao.service;
+
+import com.qbao.entity.User;
+
+public interface IUserService {
+
+	User findByName(String name);
+	
+	int insert(String name,Integer age);
+}

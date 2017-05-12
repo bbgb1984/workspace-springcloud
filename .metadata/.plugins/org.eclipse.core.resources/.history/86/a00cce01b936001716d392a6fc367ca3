@@ -1,0 +1,5 @@
+package com.qbao.entity;
+
+public class User {
+
+}

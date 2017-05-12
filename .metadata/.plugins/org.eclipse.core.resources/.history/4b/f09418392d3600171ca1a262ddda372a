@@ -1,0 +1,26 @@
+package com.qbao.service_A;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest {
+	
+	@Test
+	public void test(){
+		Retrofit retrofit2 = new Retrofit.Builder().baseUrl("")
+				.addConverterFactory(GsonConverterFactory.create())
+				.addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
+		GitHubService service2 = retrofit2.create(GitHubService.class);
+		Call<List<Object>> result=service2.listRepos("1", "2", "token");
+		System.out.println(result.toString());
+	}
+}

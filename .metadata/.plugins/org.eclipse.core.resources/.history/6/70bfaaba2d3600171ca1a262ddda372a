@@ -1,0 +1,12 @@
+package com.qbao.service_A;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
+public interface GitHubService {
+  @GET("api-a/add")
+  Call<List<Object>> listRepos(@Query("a") String a,@Query("b") String b,@Query("accessToken") String accessToken);
+}

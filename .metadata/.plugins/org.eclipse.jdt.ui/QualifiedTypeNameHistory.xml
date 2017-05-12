@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.netflix.zuul.context.RequestContext"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="retrofit2.http.Query"/>
+<fullyQualifiedTypeName name="retrofit2.Response"/>
+</qualifiedTypeNameHistroy>

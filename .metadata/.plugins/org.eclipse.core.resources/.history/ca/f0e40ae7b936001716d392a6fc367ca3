@@ -1,0 +1,14 @@
+package com.qbao;
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = Application.class)
+public class ApplicationTests {
+	@Autowired
+	private UserMapper userMapper;
+	@Test
+	@Rollback
+	public void findByName() throws Exception {
+		userMapper.insert("AAA", 20);
+		User u = userMapper.findByName("AAA");
+		Assert.assertEquals(20, u.getAge().intValue());
+	}
+}

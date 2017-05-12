@@ -1,0 +1,5 @@
+package com.qbao.service;
+
+public interface IUserService {
+
+}

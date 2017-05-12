@@ -1,0 +1,43 @@
+spring.application.name=api-gateway
+server.port=5555
+#\u9632\u6b62\u4f1a\u8bdd\u4e22\u5931 \u5168\u5c40\u8bbe\u7f6e 
+zuul.sensitive-headers=
+
+#\u4e0d\u6ce8\u518c\u4e3a\u670d\u52a1\uff0c\u9ed8\u8ba4\u4e5f\u4f1a\u628aapi-gateway\u6ce8\u518c\u4e3a\u670d\u52a1
+#eureka.client.register-with-eureka=false
+# routes to serviceId
+zuul.routes.api-a.path=/api-a/**
+zuul.routes.api-a.serviceId=computer-service
+
+#\u6307\u5b9a\u8def\u7531\u8bbe\u7f6e\uff1a#\u9632\u6b62\u4f1a\u8bdd\u4e22\u5931
+#zuul.routes.<routeName>.sensitive-headers=
+#zuul.routes.<routeName>.custom-sensitive-headers=true
+
+#\u91cd\u5b9a\u5411\u95ee\u9898
+#zuul.add-host-header=true
+
+#zuul.routes.api-b.path=/api-b/**
+#zuul.routes.api-b.serviceId=service-B
+
+# routes to url
+#zuul.routes.api-a-url.path=/api-a-url/**
+#zuul.routes.api-a-url.url=http://localhost:2222/
+
+#eureka client\u95f4\u9694\u591a\u4e45\u53bb\u62c9\u53d6\u670d\u52a1\u6ce8\u518c\u4fe1\u606f\uff0c\u9ed8\u8ba4\u4e3a30\u79d2
+eureka.client.registry-fetch-interval-seconds=5
+
+#\u8868\u793aeureka server\u81f3\u4e0a\u4e00\u6b21\u6536\u5230client\u7684\u5fc3\u8df3\u4e4b\u540e\uff0c\u7b49\u5f85\u4e0b\u4e00\u6b21\u5fc3\u8df3\u7684\u8d85\u65f6\u65f6\u95f4\uff0c\u5728\u8fd9\u4e2a\u65f6\u95f4\u5185\u82e5\u6ca1\u6536\u5230\u4e0b\u4e00\u6b21\u5fc3\u8df3\uff0c\u5219\u5c06\u79fb\u9664\u8be5instance\u3002
+#\u9ed8\u8ba4\u4e3a90\u79d2
+eureka.instance.lease-expiration-duration-in-seconds=90
+
+#leaseRenewalIntervalInSeconds\uff0c\u8868\u793aeureka client\u53d1\u9001\u5fc3\u8df3\u7ed9server\u7aef\u7684\u9891\u7387\u3002\u5982\u679c\u5728leaseExpirationDurationInSeconds\u540e\uff0c
+#server\u7aef\u6ca1\u6709\u6536\u5230client\u7684\u5fc3\u8df3\uff0c\u5219\u5c06\u6458\u9664\u8be5instance\u3002\u9664\u6b64\u4e4b\u5916\uff0c\u5982\u679c\u8be5instance\u5b9e\u73b0\u4e86HealthCheckCallback\uff0c\u5e76\u51b3\u5b9a\u8ba9\u81ea\u5df1unavailable\u7684\u8bdd\uff0c
+#\u5219\u8be5instance\u4e5f\u4e0d\u4f1a\u63a5\u6536\u5230\u6d41\u91cf\u3002
+#\u9ed8\u8ba430\u79d2
+eureka.instance.lease-renewal-interval-in-seconds=30
+
+#eureka server\u6e05\u7406\u65e0\u6548\u8282\u70b9\u7684\u65f6\u95f4\u95f4\u9694\uff0c\u9ed8\u8ba460000\u6beb\u79d2\uff0c\u537360\u79d2
+eureka.server.eviction-interval-timer-in-ms=60000
+
+
+eureka.client.serviceUrl.defaultZone=http://peer1:1111/eureka/,http://peer2:1112/eureka/,http://peer3:1113/eureka/

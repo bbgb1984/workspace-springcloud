@@ -1,0 +1,30 @@
+package com.qbao.service_A;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.junit.Test;
+
+import retrofit2.Call;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest {
+	
+	@Test
+	public void test() throws IOException{
+		Retrofit retrofit2 = new Retrofit.Builder().baseUrl("http://localhost:5555/")
+				.addConverterFactory(GsonConverterFactory.create())
+				.addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
+		GitHubService service2 = retrofit2.create(GitHubService.class);
+		Call<Integer> result=service2.listRepos("1", "2", "token");
+		Response<Integer> response=result.execute();
+		
+		System.out.println(response.body());
+	}
+}

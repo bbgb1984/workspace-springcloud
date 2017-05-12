@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=gateway/D:\/repository2\/org\/springframework\/cloud\/spring-cloud-netflix-core\/1.3.0.RELEASE\/spring-cloud-netflix-core-1.3.0.RELEASE.jar&lt;org.springframework.cloud.netflix.zuul(ZuulFilterInitializer.class[ZuulFilterInitializer" modifiers="33" timestamp="1494379637712"/>
+<typeInfo handle="=server-cluster-1/D:\/repository2\/org\/springframework\/cloud\/spring-cloud-netflix-core\/1.3.0.RELEASE\/spring-cloud-netflix-core-1.3.0.RELEASE.jar&lt;org.springframework.cloud.netflix.zuul.filters.post(SendResponseFilter.class[SendResponseFilter" modifiers="33" timestamp="1494379637712"/>
+</typeInfoHistroy>

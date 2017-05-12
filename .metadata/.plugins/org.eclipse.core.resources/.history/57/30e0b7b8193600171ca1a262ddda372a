@@ -1,0 +1,7 @@
+package com.didispace.filter;
+
+import org.springframework.cloud.netflix.zuul.ZuulFilterInitializer;
+
+public class PostFilter extends ZuulFilterInitializer {
+
+}
