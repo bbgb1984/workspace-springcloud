@@ -1,0 +1,2 @@
+2017-05-15 15:15:05,117  INFO ComputeServiceApplication:637 ---- No active profile set, falling back to default profiles: default
+2017-05-15 15:15:33,865  INFO ComputeServiceApplication:57 ---- Started ComputeServiceApplication in 32.687 seconds (JVM running for 33.417)

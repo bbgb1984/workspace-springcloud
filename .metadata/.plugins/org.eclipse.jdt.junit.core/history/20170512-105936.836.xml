@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ApplicationTests" project="service-A" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.qbao.ApplicationTests" time="2.257">
-    <testcase name="findByName" classname="com.qbao.ApplicationTests" time="2.257"/>
-  </testsuite>
-</testrun>

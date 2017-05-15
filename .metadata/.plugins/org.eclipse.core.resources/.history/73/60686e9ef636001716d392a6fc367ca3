@@ -1,0 +1,38 @@
+package com.qbao.datasource;
+import java.lang.reflect.Method;
+
+import javax.sql.DataSource;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.reflect.MethodSignature;
+//@Aspect
+//@Component
+public class DataSourceAspect {
+	//@Pointcut("execution(* com.apc.cms.service.*.*(..))")  
+	public void pointCut(){};  
+	
+  //  @Before(value = "pointCut()")
+	 public void before(JoinPoint point)
+		{
+			Object target = point.getTarget();
+			String method = point.getSignature().getName();
+			Class<?>[] classz = target.getClass().getInterfaces();
+			Class<?>[] parameterTypes = ((MethodSignature) point.getSignature())
+				.getMethod().getParameterTypes();
+			try {
+				Method m = classz[0].getMethod(method, parameterTypes);
+				if (m != null && (m.getName().toLowerCase().startsWith("update")
+							||m.getName().toLowerCase().startsWith("insert")
+							||m.getName().toLowerCase().startsWith("delete"))) {
+					System.out.println("aaaaaaaaaaaaaaaaaaaaaa");
+					HandleDataSource.putDataSource(HandleDataSource.DATA_SOURCE_A);
+				}else{
+					System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbb");
+					HandleDataSource.putDataSource(HandleDataSource.DATA_SOURCE_B);
+				}
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+}

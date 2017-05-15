@@ -1,0 +1,8 @@
+spring.application.name=feign-consumer
+server.port=3333
+#\u4e0d\u6ce8\u518c\u4e3a\u670d\u52a1\uff0c\u9ed8\u8ba4\u4e5f\u4f1a\u628afeign-consumer\u6ce8\u518c\u4e3a\u670d\u52a1
+eureka.client.register-with-eureka=false
+#\u5f00\u542fhystrix\u7194\u65ad
+feign.hystrix.enabled=true
+eureka.client.serviceUrl.defaultZone=http://peer1:1111/eureka/,http://peer2:1112/eureka/,http://peer3:1113/eureka/
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.didispace.filter&apos; to &apos;com.bingo.filter&apos;&#x0D;&#x0A;- Original project: &apos;gateway&apos;&#x0D;&#x0A;- Original element: &apos;gateway/src/main/java/com.didispace.filter&apos;&#x0D;&#x0A;- Renamed element: &apos;gateway/src/main/java/com.bingo.filter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.didispace.filter&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.didispace.filter" name="com.bingo.filter" qualified="false" references="true" stamp="1494832783020" textual="false" version="1.0"/>
+</session>

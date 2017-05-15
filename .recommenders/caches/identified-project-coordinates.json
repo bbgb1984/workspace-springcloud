@@ -1,1 +1,1 @@
-[[{"location":"C:\\Program Files\\Java\\jdk1.8.0_121","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"]]
+[[{"location":"C:\\Program Files\\Java\\jdk1.8.0_121","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"],[{"location":"D:\\repository2\\org\\springframework\\spring-jdbc\\4.3.7.RELEASE\\spring-jdbc-4.3.7.RELEASE.jar","type":"JAR","hints":{}},"ABSENT"],[{"location":"D:\\workspace-springcloud\\service-A","type":"PROJECT","hints":{"PROJECT_NAME":"service-A"}},"com.qbao:service-A:0.0.1"]]

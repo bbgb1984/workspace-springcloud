@@ -1,0 +1,8 @@
+#Tomcat publish data
+#Mon May 15 11:12:52 CST 2017
+org.eclipse.jst.j2ee.server\:renren-shiro=WEB-INF/lib/renren-shiro-2.0.0.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\repository2\\org\\springframework\\spring-web\\4.3.7.RELEASE\\spring-web-4.3.7.RELEASE.jar=WEB-INF/lib/spring-web-4.3.7.RELEASE.jar
+org.eclipse.jst.j2ee.server\:renren-common=WEB-INF/lib/renren-common-2.0.0.jar
+org.eclipse.jst.j2ee.server\:renren-api=WEB-INF/lib/renren-api-2.0.0.jar
+org.eclipse.jst.j2ee.server\:renren-schedule=WEB-INF/lib/renren-schedule-2.0.0.jar
+org.eclipse.jst.j2ee.server\:renren-gen=WEB-INF/lib/renren-gen-2.0.0.jar

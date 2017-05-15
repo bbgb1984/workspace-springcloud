@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 5 resources" deleteContents="false" description="Delete 5 resources" element1="/disconf-spring-boot-core" element2="/disconf-spring-boot-demo" element3="/disconf-spring-boot-web" element4="/disconf-standalone-demo" element5="/disconf-standalone-dubbo-demo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1494812830163"/>
+</session>
